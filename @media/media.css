@@ -1,0 +1,59 @@
+.cuadro1,
+.cuadro2,
+.cuadro3,
+.cuadro4{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(137, 255, 255);
+    color: white ;
+}
+.cuadro2{
+    background-color: rgb(243, 165, 243);
+}
+.cuadro3{
+    background-color: rgb(234, 247, 166);
+}
+.cuadro4{
+    background-color: rgb(164, 243, 168);
+}
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+/* Medidas celulares en vertical */ 
+@media (max-width: 576px){
+    .contenedor{
+        width: 100%;
+        height: auto;
+        background-color: gray;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+/* Medidas celulares en horizontal y tablets */ 
+@media (min-width: 577px) and (max-width: 1024px){
+    .contenedor{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* Medidas computadores portatiles */ 
+@media (min-width: 1025px) and (max-width: 1300px){
+    .contenedor{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cuadro1,
+    .cuadro2,
+    .cuadro3,
+    .cuadro4{
+        border-radius: 50%;
+    }
+
+}
